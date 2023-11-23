@@ -12,7 +12,7 @@ function Login() {
             variant="h4"
             gutterBottom
           >
-            Log in
+            Log In
           </Typography>
           <TextField
             sx={{ marginBottom: "32px" }}
