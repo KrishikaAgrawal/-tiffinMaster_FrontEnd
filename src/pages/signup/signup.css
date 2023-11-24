@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: column;
     padding:32px;
-    border: 10px solid #ff3131;
-    width: 300px;
+    border: 15px solid #ff3131;
+    /* width: 300px; */
 }
 
 /* .formContainer{

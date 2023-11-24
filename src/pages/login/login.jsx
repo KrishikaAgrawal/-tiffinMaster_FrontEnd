@@ -1,11 +1,12 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, Divider, TextField, Typography } from "@mui/material";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <div className="Login">
       <div className="formContainer">
-        <div class="form">
+        <div class="login-form">
           <Typography
             className="heading"
             sx={{ marginBottom: "32px", fontWeight: 600 }}
@@ -20,6 +21,7 @@ function Login() {
             id="filled-error"
             label="e-mail id or username"
             variant="outlined"
+            size="small"
           />
           <TextField
             sx={{ marginBottom: "32px" }}
@@ -28,8 +30,14 @@ function Login() {
             id="filled-error"
             label="password"
             variant="outlined"
+            size="small"
           />
           <Button variant="contained">Sign in</Button>
+
+          <div className="horizontal-bar" />
+          <Link className="link" to="/signup">
+            Not a member? Create Account
+          </Link>
         </div>
       </div>
     </div>
